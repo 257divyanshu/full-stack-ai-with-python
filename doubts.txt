@@ -1,0 +1,2 @@
+1 doubt in notes 40 : notes .py
+1 doubt in notes 42 : notes.py
