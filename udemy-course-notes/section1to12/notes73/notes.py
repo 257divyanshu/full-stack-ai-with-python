@@ -1,42 +1,24 @@
 from multiprocessing import Process
-import threading
 import time
 
-def brew_chai():
-    print(f"{threading.current_thread().name} started brewing...")
+def crunch_number():
+    print(f"Started the count process...")
     count = 0
     for _ in range(100_000_000):
         count += 1
-    print(f"{threading.current_thread().name} finished brewing...")
-
-# 📍 SIR'S CODE : demonstrating that threading doesn't work here
-
-# thread1 = threading.Thread(target=brew_chai, name="Barista-1")
-# thread2 = threading.Thread(target=brew_chai, name="Barista-2")
-
-# start = time.time()
-
-# thread1.start()
-# thread2.start()
-# thread1.join()
-# thread2.join()
-
-# end = time.time()
-
-# print(f"total time taken: {end - start:.2f} seconds")
-
-# 📍 MY CODE : trynig out multi-processing
+    print(f"Ended the count process...")
 
 if __name__ == "__main__":
-
-    process1 = Process(target=brew_chai, name='Barista-1')
-    process2 = Process(target=brew_chai, name='Barista-2')
-
     start = time.time()
-    process1.start()
-    process2.start()
-    process1.join()
-    process2.join()
+
+    p1 = Process(target=crunch_number)
+    p2= Process(target=crunch_number)
+
+    p1.start()
+    p2.start()
+    p1.join()
+    p2.join()
+
     end = time.time()
 
-    print(f"total time taken: {end - start:.2f} seconds")
+    print(f"Total time with multi-processing is {end - start:.2f} seconds")
