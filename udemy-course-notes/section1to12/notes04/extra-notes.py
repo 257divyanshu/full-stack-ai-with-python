@@ -1,0 +1,1 @@
+# 📍 differentiate between strongly typed languages and loosely typed languages

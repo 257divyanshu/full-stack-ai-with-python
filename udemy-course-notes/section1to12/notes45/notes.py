@@ -1,6 +1,7 @@
 def chai_customer():
     print("Welcome ! What chai would you like ?")
     order = yield
+    print("starting the while loop")
     while True:
         print(f"Preparing: {order}")
         order = yield

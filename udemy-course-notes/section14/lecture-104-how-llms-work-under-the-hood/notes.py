@@ -10,4 +10,4 @@
 # - this transformer took in an "input sequence" and gave an "output sequence"
 
 # 📍 white paper
-# - the word transformer comes from Google's white paper named "Attention is all you need"
+# - the word transformer came from Google's white paper named "Attention is all you need"

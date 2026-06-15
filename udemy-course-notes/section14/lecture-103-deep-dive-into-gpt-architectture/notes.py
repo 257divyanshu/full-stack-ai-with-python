@@ -1,7 +1,7 @@
 # - user inputs are called input tokens
 # - output generated consists of output tokens
 # - GPT stands for Generative Pre-trained Transformer
-# - GPT is  the name given by OpenAI to their LLM models
+# - GPT is the name given by OpenAI to their LLM models
 # - Generative : represents the generative nature
 # - Pre-trained : the model is pre-trained on data
 # - Transformer : it's actually a transformer

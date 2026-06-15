@@ -23,3 +23,12 @@ order_thread.join()
 brew_thread.join()
 
 print(f"All orders taken and chai brewed")
+
+# 📍 OUTPUT
+# 0s Taking order for #1
+# 0s Brewing chai for #1
+# 2s Taking order for #2
+# 3s Brewing chai for #2
+# 4s Taking order for #3
+# 6s Brewing chai for #3
+# 9s All orders taken and chai brewed

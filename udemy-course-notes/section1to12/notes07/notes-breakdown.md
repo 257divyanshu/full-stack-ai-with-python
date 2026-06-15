@@ -117,7 +117,7 @@ Is cinnamon in masala spices ? True
 
 | Code Section        | Concept                                                       | Description                              |
 | ------------------- | ------------------------------------------------------------- | ---------------------------------------- |
-| Tuple unpacking     | `spice1, spice2, spice3 = masala_spices`                      | Assign multiple values at once           |
+| Tuple unpacking     | `(spice1, spice2, spice3) = masala_spices`                      | Assign multiple values at once           |
 | Multiple assignment | `ginger_ratio, cadramom_ratio = 2, 1`                         | Initialize multiple vars cleanly         |
 | Swapping            | `ginger_ratio, cadramom_ratio = cadramom_ratio, ginger_ratio` | Swap two values easily                   |
 | Membership test     | `'cinnamon' in masala_spices`                                 | Check if an element exists in a sequence |

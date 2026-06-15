@@ -1,0 +1,6 @@
+- first create a virtual environment named "venv" using the command : python -m venv venv
+- activate that virtual environment using the command : venv\Scripts\activate
+- install tiktoken (a package made by OpenAI to tokenize and detokenize text) using the command : pip install tiktoken
+- run the command : pip freeze > requirements.txt
+
+- go through the main.py script in the tokenization folder
