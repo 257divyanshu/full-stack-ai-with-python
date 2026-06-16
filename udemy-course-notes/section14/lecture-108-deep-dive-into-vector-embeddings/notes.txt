@@ -1,0 +1,3 @@
+- vector embeddings give a semantic meaning to tokens
+
+- Vector embeddings are mathematical representations of data points, including text, images and other data types, that capture their meaning and relationships.
