@@ -1,0 +1,8 @@
+step 1 : tokenization 
+step 2 : vector embeddings
+step 3 : positional encoding
+step 4 : self attention ("river bank" and "HDFC bank" example)
+
+after self attention and multi head attention, actual predictions are done
+then probabilities are generated
+then from the probable set of words, a word is chosen (by softmax)
