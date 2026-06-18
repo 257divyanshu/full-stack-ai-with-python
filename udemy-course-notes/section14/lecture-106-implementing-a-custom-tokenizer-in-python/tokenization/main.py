@@ -1,14 +1,28 @@
 import tiktoken
 
-# step 1 : get an encoder
-enc = tiktoken.encoding_for_model("gpt-4o") # we want to create an encoder for gpt-4o model
+# Create a tokenizer (encoder) that uses the same tokenization rules as the GPT-4o model.
+#
+# Different models may use different encodings, so using encoding_for_model() ensures compatibility with the target model.
+enc = tiktoken.encoding_for_model("gpt-4o")
 
-textToEncode = "Hare Krishna Dear Devotees!" # the text that we want to encode
+# The text we want to convert into tokens.
+textToEncode = "Hare Krishna Dear Devotees!"
 
-tokens = enc.encode(textToEncode) # encode the text
-print("tokens:",tokens) # logs the tokens
+# Convert the text into a list of token IDs.
+#
+# A token is a small unit of text. Depending on the text,
+# a token may represent:
+# - a whole word
+# - part of a word
+# - punctuation
+# - whitespace
+tokens = enc.encode(textToEncode)
+print("tokens:",tokens)
 # OUTPUT : tokens [39, 644, 105025, 63682, 11674, 1962, 268, 0]
 
-decodedOutput = enc.decode([39, 644, 105025, 63682, 11674, 1962, 268, 0]) # decode the encoded text
-print("decodedOutput:",decodedOutput) # logs the decodedOutput
+# Convert token IDs back into human-readable text.
+#
+# decode() performs the reverse operation of encode().
+decodedOutput = enc.decode([39, 644, 105025, 63682, 11674, 1962, 268, 0])
+print("decodedOutput:",decodedOutput)
 # OUTPUT : decodedOutput: Hare Krishna Dear Devotees!

@@ -1,0 +1,2 @@
+activating venv : venv\Scripts\activate
+generating requirements.txt : pip freeze > requirements.txt
