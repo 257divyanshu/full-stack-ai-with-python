@@ -1,0 +1,1 @@
+- zero-shot prompting : the model is given a direct question or task without prior examples
