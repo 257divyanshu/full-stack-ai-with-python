@@ -1,0 +1,3 @@
+- using few shot prompting
+  - we can structure the responses
+  - we can bind the output quality as well
