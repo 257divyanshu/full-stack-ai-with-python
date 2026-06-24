@@ -1,0 +1,3 @@
+- to get more accurte answers, we need to make the model think before answering
+
+- in 📂 main.py, we had to send all the messages back as history, because its a stateless connection
