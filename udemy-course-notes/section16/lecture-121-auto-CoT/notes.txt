@@ -1,0 +1,3 @@
+- in the previous tutorial, we had to manually append the assistant's responses into the 'messages' array
+- we want to automate that
+- head to 📁 main.py file
